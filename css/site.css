@@ -10,3 +10,5 @@
 
 /* Gary does not join the Hand; he keeps it moving. */
 .member:nth-child(5){grid-column:span 1!important}.member-gary .portrait{background-image:linear-gradient(0deg,rgba(11,8,9,.08),rgba(11,8,9,.08)),url("../assets/images/members/gary-road-guy.jpg");background-size:cover;background-position:center 28%}
+
+.member-grid{grid-auto-flow:row dense}
