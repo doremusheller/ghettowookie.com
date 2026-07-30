@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "videos": [],
+  "instructions": "Add each exported MP4 to this folder, then add an entry with file, title, and optional instagram URL. The Media page selects six entries at random per view."
+}
