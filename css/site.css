@@ -26,3 +26,6 @@
 .button-gold{background:#f3a237;color:#170d12;box-shadow:0 8px 24px rgba(243,162,55,.22)}.button-gold:hover{background:#ffc367}.tour-logo{background:#09070b url("../assets/images/ghetto-wookie-logo.jpg") center/cover no-repeat;border-radius:4px;box-shadow:0 20px 58px rgba(0,0,0,.34)}.tour-logo .orbit,.tour-logo span{display:none}
 
 .gary-note{display:grid;grid-template-columns:minmax(200px,.62fr) minmax(280px,1.38fr);gap:clamp(28px,5vw,70px);align-items:center;max-width:1100px}.gary-photo{min-height:330px;background:url("../assets/images/members/gary-road-guy.jpg") center 28%/cover no-repeat}.gary-copy>p:last-child{color:#d5c7c6;font-size:clamp(16px,1.4vw,20px);line-height:1.65;margin:28px 0 0}@media(max-width:760px){.gary-note{grid-template-columns:1fr}.gary-photo{min-height:390px}}
+
+/* Canonical backstage hero and editorial Gary portrait. */
+.hero-image{background-image:url("../assets/images/ghetto-wookie-band-hero.jpg");background-position:center;background-size:cover}.hero-shadow{background:linear-gradient(90deg,rgba(8,6,8,.34) 0%,rgba(8,6,8,.16) 36%,rgba(8,6,8,.02) 72%),linear-gradient(0deg,rgba(8,6,8,.34),transparent 55%)}
