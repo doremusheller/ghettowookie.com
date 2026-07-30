@@ -7,4 +7,6 @@
 
 /* Composition refinements. */
 .member .portrait{filter:saturate(.96) contrast(1.04)}.member-shag .portrait{background-position:center 35%}.member-bo .portrait{background-position:center 34%}.member-luna .portrait{background-position:center 35%}.member-drumma .portrait{background-position:center 32%}.member-gnome .portrait{background-position:center 32%}
-\n/* Gary does not join the Hand; he keeps it moving. */\n.member:nth-child(5){grid-column:auto}.member-gary .portrait{background-image:linear-gradient(0deg,rgba(11,8,9,.08),rgba(11,8,9,.08)),url("../assets/images/members/gary-road-guy.jpg");background-size:cover;background-position:center 28%}\n
+
+/* Gary does not join the Hand; he keeps it moving. */
+.member:nth-child(5){grid-column:span 1!important}.member-gary .portrait{background-image:linear-gradient(0deg,rgba(11,8,9,.08),rgba(11,8,9,.08)),url("../assets/images/members/gary-road-guy.jpg");background-size:cover;background-position:center 28%}
