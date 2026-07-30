@@ -3,13 +3,88 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ghetto Wookie — Test Site</title>
-  <meta name="description" content="A new home for the intergalactic groove scoundrels.">
+  <title>Ghetto Wookie | The Intergalactic Groove Scoundrels</title>
+  <meta name="description" content="You can't catch them. But you can funk to them.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-  <!-- Test rebuild: homepage only. -->
-  <main id="site-root"></main>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Ghetto Wookie home"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#the-hand">The Hand</a>
+      <a href="#invasion">Invasion</a>
+      <a href="#transmission">Transmission</a>
+      <a class="nav-shop" href="https://ghettowookie.shop/" target="_blank" rel="noreferrer">Shwag Shack ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" role="img" aria-label="Ghetto Wookie in the studio"></div>
+      <div class="hero-shadow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow">EARTH YEAR 2026 · NOW BROADCASTING</p>
+        <h1 id="hero-title">You can’t catch them.<br><em>But you can funk to them.</em></h1>
+        <p class="hero-deck">The intergalactic groove scoundrels may be playing near you. Or directly inside your sense of time.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#transmission">Enter the groove <span>↓</span></a>
+          <a class="button button-ghost" href="#invasion">Find an invasion</a>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <span>01 / THE WOOKULATION BEGINS</span>
+        <span>SCROLL TO SURVIVE ↓</span>
+      </div>
+    </section>
+
+    <section id="the-hand" class="hand section">
+      <div class="section-intro">
+        <p class="eyebrow">THE HAND</p>
+        <h2>Five forces.<br>One unreasonable groove.</h2>
+        <p>Not a band in the ordinary sense. More a weather system, a labor dispute, and a spiritual event with excellent low end.</p>
+      </div>
+      <div class="member-grid">
+        <article class="member member-shag"><span>01</span><h3>Shag<br>Fantastiq</h3><p>Velvet Titan of Bass</p></article>
+        <article class="member member-bo"><span>02</span><h3>Bodacious<br>Scraggleton XIII</h3><p>Fallen royalty. Paper-crown authority.</p></article>
+        <article class="member member-luna"><span>03</span><h3>Luna<br>Voce</h3><p>The Amethyst Siren</p></article>
+        <article class="member member-drumma"><span>04</span><h3>Drumma<br>Kaan</h3><p>Four arms. Five hundred children. Perfect time.</p></article>
+        <article class="member member-gnome"><span>05</span><h3>DJ<br>Astrognome</h3><p>Keeper of the eternal afterparty.</p></article>
+      </div>
+    </section>
+
+    <section id="invasion" class="invasion section">
+      <div class="invasion-art" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span>GW</span></div>
+      <div class="invasion-copy">
+        <p class="eyebrow">INTERWOOKULAR LIVE TOUR</p>
+        <h2>Legends don’t tour.<br><em>They invade.</em></h2>
+        <p>From Madison Square Garden to the outer edge of linear time, the 2026 Interwookular tour is now accepting witnesses.</p>
+        <div class="dates">
+          <div><b>MAY 03</b><span>Madison Square Garden · New York</span></div>
+          <div><b>JUN 04</b><span>Red Rocks · Colorado</span></div>
+          <div><b>JUL 11</b><span>Soldier Field · Chicago</span></div>
+        </div>
+        <a class="text-link" href="#transmission">View the complete invasion itinerary <span>→</span></a>
+      </div>
+    </section>
+
+    <section id="transmission" class="transmission section">
+      <p class="eyebrow">INCOMING TRANSMISSION</p>
+      <blockquote>“This counts as a legal defense,<br><em>in our opinion.”</em></blockquote>
+      <p class="quote-source">— GHETTO WOOKIE, SPEAKING THROUGH COUNSEL</p>
+      <a class="button button-gold" href="https://www.youtube.com/channel/UCMTA7sQMYckZrdn3FC0UUag" target="_blank" rel="noreferrer">Watch Interwookular ↗</a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark" href="#top"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a>
+    <p>© 2026 Ghetto Wookie. All systems funkational.</p>
+    <div><a href="https://www.instagram.com/ghettowookie/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.youtube.com/channel/UCMTA7sQMYckZrdn3FC0UUag" target="_blank" rel="noreferrer">YouTube ↗</a></div>
+  </footer>
   <script src="js/site.js"></script>
 </body>
 </html>
