@@ -21,3 +21,6 @@
 .portrait-link{display:block;color:inherit;text-decoration:none}
 
 .legal-video{width:min(850px,100%);aspect-ratio:16/9;margin:0 auto 34px;border:1px solid rgba(244,234,217,.24);box-shadow:0 18px 60px rgba(0,0,0,.35);background:#000}.legal-video iframe{width:100%;height:100%;display:block;border:0}
+
+/* Solar gold buttons and the real Ghetto Wookie tour mark. */
+.button-gold{background:#f3a237;color:#170d12;box-shadow:0 8px 24px rgba(243,162,55,.22)}.button-gold:hover{background:#ffc367}.tour-logo{background:#09070b url("../assets/images/ghetto-wookie-logo.jpg") center/cover no-repeat;border-radius:4px;box-shadow:0 20px 58px rgba(0,0,0,.34)}.tour-logo .orbit,.tour-logo span{display:none}
