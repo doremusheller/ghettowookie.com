@@ -1,5 +1,95 @@
 {
   "version": 1,
-  "videos": [],
-  "instructions": "Add each exported MP4 to this folder, then add an entry with file, title, and optional instagram URL. The Media page selects six entries at random per view."
+  "videos": [
+    {
+      "file": "0137098b156c4a6a86cdc77026126ef0.MP4",
+      "poster": "posters/0137098b156c4a6a86cdc77026126ef0.jpg",
+      "title": "Wookiegram transmission 01",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "0bd1cc95ffde486bb581cbec6f5a72f5.MP4",
+      "poster": "posters/0bd1cc95ffde486bb581cbec6f5a72f5.jpg",
+      "title": "Wookiegram transmission 02",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "0c54f2e3461d4fa0b75fbd67b2b6d894.MP4",
+      "poster": "posters/0c54f2e3461d4fa0b75fbd67b2b6d894.jpg",
+      "title": "Wookiegram transmission 03",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "11aed25df76d4d67bd28a927625e2e24.MP4",
+      "poster": "posters/11aed25df76d4d67bd28a927625e2e24.jpg",
+      "title": "Wookiegram transmission 04",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "1683cc67cf424700bd551ef23122b1e0.MP4",
+      "poster": "posters/1683cc67cf424700bd551ef23122b1e0.jpg",
+      "title": "Wookiegram transmission 05",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "5c8b76a005484cb085803cf387b22135.MP4",
+      "poster": "posters/5c8b76a005484cb085803cf387b22135.jpg",
+      "title": "Wookiegram transmission 06",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "60d21fe639e840aba67065ed5c39a0ea.MP4",
+      "poster": "posters/60d21fe639e840aba67065ed5c39a0ea.jpg",
+      "title": "Wookiegram transmission 07",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "6fb4bd7e934e4c3fbb90a0e9c43051a7.MP4",
+      "poster": "posters/6fb4bd7e934e4c3fbb90a0e9c43051a7.jpg",
+      "title": "Wookiegram transmission 08",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "75edfdfdcb164a49bc7d095155d9d58f.MP4",
+      "poster": "posters/75edfdfdcb164a49bc7d095155d9d58f.jpg",
+      "title": "Wookiegram transmission 09",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "7e52c8055b5c4391a25d1d667b99de8d.MP4",
+      "poster": "posters/7e52c8055b5c4391a25d1d667b99de8d.jpg",
+      "title": "Wookiegram transmission 10",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "a5f5be6f3cd94bd8860b0bcf0ea7451e.MP4",
+      "poster": "posters/a5f5be6f3cd94bd8860b0bcf0ea7451e.jpg",
+      "title": "Wookiegram transmission 11",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "abc4cf44c2334256bfcd16672b9274da.MP4",
+      "poster": "posters/abc4cf44c2334256bfcd16672b9274da.jpg",
+      "title": "Wookiegram transmission 12",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "bbf5dade5bb444918f3a6d44c9672ff7.MP4",
+      "poster": "posters/bbf5dade5bb444918f3a6d44c9672ff7.jpg",
+      "title": "Wookiegram transmission 13",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "decf84cb69c249f3acfec0ba0b49a7e9.MP4",
+      "poster": "posters/decf84cb69c249f3acfec0ba0b49a7e9.jpg",
+      "title": "Wookiegram transmission 14",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    },
+    {
+      "file": "f160b4fa7df24676b83ee240031019d4.MP4",
+      "poster": "posters/f160b4fa7df24676b83ee240031019d4.jpg",
+      "title": "Wookiegram transmission 15",
+      "instagram": "https://www.instagram.com/ghettowookie/"
+    }
+  ]
 }
