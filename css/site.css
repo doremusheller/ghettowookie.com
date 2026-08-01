@@ -80,3 +80,6 @@
 
 /* The anonymous benefactor now gets the wall space his money insists upon. */
 .sponsor-literary{min-height:440px;grid-template-columns:minmax(300px,.95fr) minmax(0,1.05fr);padding:clamp(24px,3vw,42px)}.sponsor-literary a{width:min(100%,430px)}.sponsor-literary img{height:360px}.sponsor-literary-copy strong{font-size:clamp(36px,4vw,58px)}.sponsor-literary-copy p{font-size:17px;max-width:490px}@media(max-width:760px){.sponsor-literary{min-height:0;display:flex;padding:22px}.sponsor-literary a{width:min(100%,340px)}.sponsor-literary img{height:300px}.sponsor-literary-copy strong{font-size:32px}.sponsor-literary-copy p{font-size:15px}}
+
+/* Full-size artwork links for house sponsors. */
+.sponsor-endor>a,.sponsor-yutes>a{position:relative;z-index:1;display:block;width:100%;line-height:0}.sponsor-endor>a img,.sponsor-yutes>a img{display:block;margin-left:auto;margin-right:auto}.sponsor-yutes{min-height:360px}.sponsor-yutes>a{width:min(100%,300px);margin:0 auto}.sponsor-yutes>a img{width:100%;height:230px;margin-top:0;margin-bottom:16px;object-fit:cover;object-position:center}.sponsor-yutes strong{font-size:clamp(31px,3.2vw,45px)}.sponsor-yutes p{font-size:14px}@media(max-width:760px){.sponsor-yutes>a{width:min(100%,280px)}.sponsor-yutes>a img{height:220px}}
