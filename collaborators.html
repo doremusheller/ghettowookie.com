@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Private Ghetto Wookie collaborators console">
+  <title>Ghetto Wookie · Creative Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=17">
+  <link rel="stylesheet" href="css/collaborators.css?v=1">
+  <script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js"></script>
+</head>
+<body class="collaborators-page">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header site-header-solid">
+    <a class="wordmark" href="index.html"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a><a href="about.html">The Band</a><a href="media.html">Media</a><a href="invasions.html">Tour</a><a href="sponsors.html">Sponsors</a>
+    </nav>
+  </header>
+  <main class="vault-shell">
+    <section class="vault-hero">
+      <div>
+        <p class="eyebrow">PRIVATE TRANSMISSION · CREATIVE CREW ONLY</p>
+        <h1>The<br><em>Creative Vault</em></h1>
+        <p class="vault-deck">The working archive for the intergalactic groove scoundrels. Music, images, video, canon, and all other evidence.</p>
+      </div>
+      <div class="vault-orbit" aria-hidden="true"><span>GW</span><i></i><b></b></div>
+    </section>
+    <section class="auth-panel" aria-live="polite">
+      <div><span class="auth-dot"></span><strong id="authState">Authentication required</strong><p id="authDetail">Sign in with your invited collaborator identity to enter the private vault.</p></div>
+      <button id="signInButton" class="vault-button vault-button-acid" type="button">Sign in ↗</button>
+    </section>
+    <section id="vaultContent" class="vault-content" hidden>
+      <div class="vault-heading"><div><p class="eyebrow">AUTHORIZED ACCESS</p><h2>Choose your<br><em>transmission.</em></h2></div><span class="access-badge">PRIVATE / ENTRA</span></div>
+      <div class="asset-grid">
+        <button class="asset-card asset-audio" type="button" disabled><span class="asset-number">01</span><span class="asset-glyph">♫</span><strong>Audio / Suno</strong><small>Tracks, stems, scratch ideas, and sonic evidence.</small><em>SharePoint connection pending · ↗</em></button>
+        <button class="asset-card asset-image" type="button" disabled><span class="asset-number">02</span><span class="asset-glyph">✦</span><strong>Image Library</strong><small>Canonical characters, logos, stills, and visual references.</small><em>SharePoint connection pending · ↗</em></button>
+        <button class="asset-card asset-video" type="button" disabled><span class="asset-number">03</span><span class="asset-glyph">▶</span><strong>Video / Grok</strong><small>Scenes, exports, prompts, and production cuts.</small><em>SharePoint connection pending · ↗</em></button>
+        <button class="asset-card asset-canon" type="button" disabled><span class="asset-number">04</span><span class="asset-glyph">✎</span><strong>Canon / Lyrics</strong><small>Voice, lyrics, character bibles, and story references.</small><em>SharePoint connection pending · ↗</em></button>
+        <button class="asset-card asset-production" type="button" disabled><span class="asset-number">05</span><span class="asset-glyph">✹</span><strong>Production Desk</strong><small>Scripts, shot lists, briefs, and things Gary has circled.</small><em>SharePoint connection pending · ↗</em></button>
+        <button class="asset-card asset-approved" type="button" disabled><span class="asset-number">06</span><span class="asset-glyph">✓</span><strong>Approved Assets</strong><small>The material cleared for public transmission.</small><em>SharePoint connection pending · ↗</em></button>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="index.html"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a><p>Private creative workspace · All systems funkational.</p></footer>
+  <script src="js/collaborators.js?v=1"></script>
+</body>
+</html>
