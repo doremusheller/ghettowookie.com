@@ -181,3 +181,5 @@
 .track-meta-field input,.track-meta-field select{border:1px solid rgba(217,255,63,.3);background:#0d0910;color:var(--cream);padding:9px;font:11px "Space Grotesk",sans-serif}
 .track-meta-field option{padding:3px}
 .tracks-mode #promptField{display:none}
+
+.tracks-mode #promptField{display:none!important}.tracks-mode .upload-button{display:flex!important}.tracks-mode .new-song-button{display:none!important}
