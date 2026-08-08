@@ -188,3 +188,10 @@
 .media-details{display:grid;grid-template-columns:110px minmax(0,1fr);gap:8px 14px;margin:16px 0 0;padding-top:14px;border-top:1px solid rgba(244,234,217,.14)}
 .media-details dt{color:var(--acid);font:9px "DM Mono",monospace;text-transform:uppercase}
 .media-details dd{margin:0;color:#d5c7c6;font-size:13px;white-space:pre-wrap}
+
+.track-upload-label{display:none}
+.tracks-mode .file-panel-tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(190px,1fr) auto auto;gap:10px;align-items:end}
+.tracks-mode #fileFilter{grid-column:1/-1;width:240px;flex:initial}
+.tracks-mode .track-upload-label{display:block;grid-column:1/-1;margin:4px 0 0;color:var(--acid);font:10px "DM Mono",monospace;letter-spacing:.12em}
+.tracks-mode #trackTitleField,.tracks-mode #trackLeadField{display:flex}
+@media(max-width:760px){.tracks-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.tracks-mode #fileFilter{width:auto}}
