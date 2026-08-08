@@ -278,3 +278,8 @@
 .tracks-mode .approval-card select,.tracks-mode .approval-card textarea{padding:6px;margin-bottom:6px;font-size:11px}
 .tracks-mode .approval-card textarea{min-height:48px}
 .tracks-mode .approval-card .upload-button{padding:7px 9px}
+
+.media-row{display:grid;grid-template-columns:42px 54px minmax(150px,1fr) minmax(180px,2fr) 110px 70px;align-items:center;gap:10px;padding:7px 0}
+.media-thumb{width:42px;height:42px;object-fit:cover;background:#08070a;border:1px solid rgba(244,234,217,.16)}
+.file-description{overflow:hidden;color:#bcaeb2;font-size:12px;white-space:nowrap;text-overflow:ellipsis}
+@media(max-width:760px){.media-row{grid-template-columns:42px 1fr 58px;gap:7px}.media-row .file-kind,.media-row .file-meta{display:none}.media-row .file-description{grid-column:2/-1}.media-row .file-open{grid-column:3;grid-row:1}}
