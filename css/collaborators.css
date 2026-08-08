@@ -88,3 +88,5 @@
 .file-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .file-row a{color:var(--acid);font:9px "DM Mono",monospace;text-decoration:none;text-align:right}
 @media(max-width:600px){.file-panel-tools{align-items:stretch;flex-direction:column}.upload-button{justify-content:center;padding:12px}.file-row{grid-template-columns:42px minmax(0,1fr) 55px}.file-row a{grid-column:2;text-align:left}}
+
+@media(min-width:1051px){.collaborators-page .asset-grid{grid-template-columns:repeat(5,minmax(0,1fr))}.collaborators-page .asset-card{min-height:165px;padding:13px}.collaborators-page .asset-glyph{font-size:25px;margin:10px 0 7px}.collaborators-page .asset-card strong{font-size:18px}.collaborators-page .asset-card small{font-size:10px}.collaborators-page .asset-card em{font-size:7px}}
