@@ -131,3 +131,4 @@
 @media(max-width:600px){.prompt-field.is-lyrics{display:flex}.prompt-field textarea{min-height:74px}}
 
 .prompt-field{display:flex}
+.tool-rail a{width:52px;height:52px}.tool-rail img{width:31px;height:31px}.tool-rail .tool-gw-logo{width:41px;height:41px}.tool-rail{gap:10px;padding:14px 8px}
