@@ -206,3 +206,8 @@
 .media-mode .media-meta-field.is-media{display:flex}
 .media-mode .track-submit,.media-mode .new-song-button{display:none!important}
 @media(max-width:760px){.media-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.media-mode #fileFilter{width:auto}.depicts-checks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.media-upload-label{display:none}
+.media-mode .media-upload-label{display:block;grid-column:1/-1;margin:4px 0 0;color:var(--acid);font:10px "DM Mono",monospace;letter-spacing:.12em}
+.media-mode .media-submit{display:flex!important}
+.tracks-mode .media-submit{display:none!important}
