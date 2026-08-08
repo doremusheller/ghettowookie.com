@@ -217,3 +217,5 @@
 .tool-rail,.preview-roster{display:none}
 .vault-open .tool-rail{display:flex}
 .vault-open .preview-roster{display:block}
+
+.tracks-mode{display:flex;flex-direction:column}.tracks-mode .media-viewer{order:1}.tracks-mode .song-display{order:2}.tracks-mode .file-panel-status{order:3}.tracks-mode .file-list{order:4}
