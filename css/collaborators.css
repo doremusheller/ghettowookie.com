@@ -156,3 +156,12 @@
 .song-display dd{margin:0;color:#d5c7c6;font-size:13px;white-space:pre-wrap}
 .song-display pre{margin:0;padding:16px;background:rgba(0,0,0,.3);color:var(--cream);font:13px/1.6 "Space Grotesk",sans-serif;white-space:pre-wrap}
 @media(max-width:600px){.song-display dl{grid-template-columns:1fr;gap:4px}.song-display dd{margin-bottom:8px}.song-display h4{font-size:27px}}
+
+.media-mode .file-panel-tools>input,.media-mode #promptField,.media-mode .upload-button{display:none}
+.media-row{width:100%;border:0;background:transparent;color:var(--cream);text-align:left;cursor:pointer}
+.media-row:hover{background:rgba(217,255,63,.08)}
+.media-viewer{margin-top:18px;padding:18px;border:1px solid rgba(217,255,63,.45);background:#0b080d}
+.media-viewer[hidden]{display:none}
+.media-viewer h4{margin:0 0 14px;font-size:26px;letter-spacing:-.04em}
+.media-viewer img,.media-viewer video{display:block;width:100%;max-height:560px;object-fit:contain;background:#050407}
+.media-viewer video{min-height:260px}
