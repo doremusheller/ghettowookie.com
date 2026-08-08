@@ -243,3 +243,12 @@
 .media-mode.is-adding .media-submit{display:flex!important}
 .media-mode.is-adding .new-media-button{order:0}
 @media(max-width:760px){.media-mode .new-media-button{width:100%}}
+
+/* Working Tracks and Masters: browse first, upload on demand. */
+.tracks-mode .new-track-button{display:flex;grid-column:1/-1;order:1;width:max-content}
+.tracks-mode .track-compose{display:none!important}
+.tracks-mode.is-adding .track-compose{display:flex!important}
+.tracks-mode.is-adding .track-upload-label{display:block!important}
+.tracks-mode.is-adding .track-submit{display:flex!important}
+.tracks-mode.is-adding .new-track-button{order:0}
+@media(max-width:760px){.tracks-mode .new-track-button{width:100%}}
