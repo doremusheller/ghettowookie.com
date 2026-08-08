@@ -174,3 +174,5 @@
 .media-meta-field option{padding:3px}
 .media-mode .file-panel-tools>input,.media-mode #promptField{display:none}
 .media-mode .file-panel-tools .upload-button{display:flex}
+
+.media-mode .file-panel-tools>input{display:block}
