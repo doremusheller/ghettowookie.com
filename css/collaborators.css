@@ -229,3 +229,8 @@
 .media-mode #mediaSubmit{order:5;display:flex;align-self:stretch}
 .media-mode #fileSelectionStatus{order:6;grid-column:1/-1}
 @media(max-width:760px){.media-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.media-mode #fileFilter{width:auto}.media-mode #mediaUploadControl,.media-mode #mediaSubmit{align-self:stretch}}
+
+.media-mode #mediaUploadControl{grid-column:3;min-width:140px;justify-content:center}
+.media-mode #mediaSubmit{grid-column:3;width:100%;min-width:140px;justify-content:center}
+.media-mode #fileSelectionStatus{grid-column:1/-1}
+@media(max-width:760px){.media-mode #mediaUploadControl,.media-mode #mediaSubmit{width:100%}}
