@@ -214,3 +214,6 @@
 
 .tracks-mode .media-details,.masters-mode .media-details{display:none!important}
 .file-selection-status{color:var(--acid);font:9px "DM Mono",monospace;align-self:center}.media-mode .file-selection-status{display:block}@media(max-width:760px){.file-selection-status{align-self:flex-start}}
+.tool-rail,.preview-roster{display:none}
+.vault-open .tool-rail{display:flex}
+.vault-open .preview-roster{display:block}
