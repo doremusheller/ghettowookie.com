@@ -265,3 +265,6 @@
 .approval-card textarea{resize:vertical}
 .approval-card .upload-button{display:flex;width:100%;justify-content:center}
 @media(max-width:760px){.approval-grid{grid-template-columns:1fr}}
+
+.archive-track-button{margin-top:12px;border:1px solid rgba(255,120,120,.55);background:transparent;color:#ffb0aa;padding:9px 13px;font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
+.archive-track-button:hover{background:rgba(255,100,100,.12)}
