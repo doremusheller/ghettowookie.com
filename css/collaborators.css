@@ -140,3 +140,19 @@
 .song-composer label{display:grid;gap:6px;color:var(--acid);font:10px "DM Mono",monospace;letter-spacing:.05em}
 .song-composer input,.song-composer textarea{width:100%;box-sizing:border-box;border:1px solid rgba(244,234,217,.2);background:#0d0910;color:var(--cream);padding:10px;font:12px "Space Grotesk",sans-serif}
 .song-composer textarea{resize:vertical}
+
+.new-song-button{display:none}
+.lyrics-mode .new-song-button{display:flex}
+.lyrics-mode .file-panel-tools>input,.lyrics-mode #promptField,.lyrics-mode .upload-button:not(.new-song-button){display:none}
+.song-row{width:100%;border:0;background:transparent;color:var(--cream);text-align:left;cursor:pointer}
+.song-row:hover{background:rgba(217,255,63,.08)}
+.file-open{color:var(--acid);font:9px "DM Mono",monospace;text-align:right}
+.song-display{margin-top:18px;padding:22px;border:1px solid rgba(217,255,63,.45);background:linear-gradient(145deg,#21152a,#0d0911)}
+.song-display[hidden]{display:none}
+.song-display-head{border-bottom:1px solid rgba(244,234,217,.16);padding-bottom:14px;margin-bottom:14px}
+.song-display h4{margin:0;font-size:34px;letter-spacing:-.05em}
+.song-display dl{display:grid;grid-template-columns:130px minmax(0,1fr);gap:8px 16px;margin:0 0 18px}
+.song-display dt{color:var(--acid);font:9px "DM Mono",monospace;text-transform:uppercase}
+.song-display dd{margin:0;color:#d5c7c6;font-size:13px;white-space:pre-wrap}
+.song-display pre{margin:0;padding:16px;background:rgba(0,0,0,.3);color:var(--cream);font:13px/1.6 "Space Grotesk",sans-serif;white-space:pre-wrap}
+@media(max-width:600px){.song-display dl{grid-template-columns:1fr;gap:4px}.song-display dd{margin-bottom:8px}.song-display h4{font-size:27px}}
