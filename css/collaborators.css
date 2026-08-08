@@ -6,3 +6,51 @@
 .vault-hero{grid-template-columns:minmax(320px,.78fr) minmax(520px,1.22fr);min-height:520px}.vault-studio{width:100%}@media(max-width:760px){.vault-hero{grid-template-columns:1fr;min-height:650px}.vault-studio{width:100%}}
  .voice-desk{padding:80px 0 35px}.voice-card{display:flex;align-items:center;gap:22px;border:1px solid rgba(217,255,63,.4);padding:12px;background:linear-gradient(110deg,#26172f,#0e0b12);color:var(--cream);text-decoration:none;transition:transform .2s,border-color .2s}.voice-card:hover{transform:translateY(-4px);border-color:var(--acid)}.voice-art{width:108px;height:108px;flex:none;border-radius:18px;background:url("../assets/images/gw-logo.jpg") center/cover;box-shadow:0 0 28px rgba(255,50,170,.32)}.voice-copy{display:flex;flex-direction:column;gap:7px}.voice-copy b{font:500 30px Georgia,serif}.voice-copy small{color:#d5c7c6;font-size:13px}.voice-copy em{color:var(--acid);font:10px "DM Mono",monospace;letter-spacing:.08em}@media(max-width:760px){.voice-desk{padding-top:65px}.voice-card{align-items:flex-start}.voice-art{width:82px;height:82px}.voice-copy b{font-size:25px}} .collaborators-page .grain{display:none!important}
 .voice-card .voice-art{background-image:url("../assets/images/members/luna-voce.jpg")}.voice-card.voice-bo .voice-art{background-image:url("../assets/images/members/bodacious-scraggleton.jpg")}.voice-card.voice-shag .voice-art{background-image:url("../assets/images/members/shag-fantastiq.jpg")}.voice-card.voice-drumma .voice-art{background-image:url("../assets/images/members/drumma-kaan.jpg")}.voice-card.voice-gnome .voice-art{background-image:url("../assets/images/members/dj-astrognome.jpg")}
+/* Dashboard compression pass */
+.collaborators-page .vault-shell{width:min(1480px,calc(100% - 48px));padding:34px 0 72px}
+.collaborators-page .vault-hero{min-height:300px;grid-template-columns:minmax(0,1fr) minmax(420px,.9fr);gap:28px}
+.collaborators-page .vault-hero h1{font-size:clamp(54px,7vw,96px)}
+.collaborators-page .vault-deck{font-size:15px;line-height:1.4;margin-top:18px;max-width:500px}
+.collaborators-page .vault-mark{width:92px;margin-top:18px}
+.collaborators-page .vault-studio{padding:5px;transform:none}
+.collaborators-page .vault-studio:before{left:12px;bottom:12px}
+.collaborators-page .auth-panel{padding:15px 18px;margin-top:18px}
+.collaborators-page .band-roster{padding-top:52px}
+.collaborators-page .preview-roster{padding-top:42px}
+.collaborators-page .roster-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:14px}
+.collaborators-page .roster-heading h2{font-size:clamp(34px,4vw,56px)}
+.collaborators-page .band-roster-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:2px}
+.collaborators-page .band-tile{min-height:250px;padding:14px}
+.collaborators-page .band-portrait{inset:0 0 92px}
+.collaborators-page .band-tile h3{font-size:22px}
+.collaborators-page .band-tile>p:last-child{font-size:10px;line-height:1.25;margin-top:8px}
+.collaborators-page .band-tile .eyebrow{font-size:7px;margin-bottom:6px}
+.collaborators-page .vault-content{padding-top:48px}
+.collaborators-page .vault-heading{margin-bottom:16px}
+.collaborators-page .vault-heading h2{font-size:clamp(36px,4vw,60px)}
+.collaborators-page .voice-desk{padding:34px 0 22px}
+.collaborators-page .voice-card{padding:8px;gap:14px}
+.collaborators-page .voice-art{width:72px;height:72px;border-radius:12px}
+.collaborators-page .voice-copy{gap:3px}
+.collaborators-page .voice-copy b{font-size:22px}
+.collaborators-page .voice-copy small{font-size:11px}
+.collaborators-page .asset-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:2px}
+.collaborators-page .asset-card{min-height:190px;padding:16px}
+.collaborators-page .asset-glyph{font-size:30px;margin:15px 0 9px}
+.collaborators-page .asset-card strong{font-size:21px}
+.collaborators-page .asset-card small{font-size:11px;margin-top:7px}
+.collaborators-page .asset-card em{font-size:8px}
+.collaborators-page .vault-roster{display:none}
+@media(max-width:1050px){
+ .collaborators-page .band-roster-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .collaborators-page .asset-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+ .collaborators-page .vault-shell{width:calc(100% - 28px);padding-top:24px}
+ .collaborators-page .vault-hero{grid-template-columns:1fr;min-height:0}
+ .collaborators-page .vault-studio{order:-1}
+ .collaborators-page .vault-mark{width:78px}
+ .collaborators-page .band-roster-grid,.collaborators-page .asset-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .collaborators-page .band-tile{min-height:240px}
+ .collaborators-page .roster-heading{display:block}
+}
