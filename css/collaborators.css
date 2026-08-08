@@ -71,3 +71,20 @@
 .search-result:last-child{border-bottom:0}
 .search-result a{color:var(--acid);font:10px "DM Mono",monospace;text-decoration:none}
 @media(max-width:760px){.dashboard-bar{align-items:stretch;flex-direction:column}.sharepoint-search{width:auto}.search-result{align-items:flex-start;flex-direction:column;gap:5px}}
+
+.file-panel{margin-top:18px;padding:18px;border:1px solid rgba(217,255,63,.46);background:rgba(19,12,24,.94);box-shadow:0 20px 70px rgba(0,0,0,.35)}
+.file-panel[hidden]{display:none}
+.file-panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.file-panel-head h3{margin:0;font-size:30px;letter-spacing:-.05em}
+.file-panel-close{border:1px solid rgba(244,234,217,.25);background:transparent;color:var(--cream);font-size:24px;width:34px;height:34px;cursor:pointer}
+.file-panel-tools{display:flex;gap:10px;margin:16px 0 10px}
+.file-panel-tools>input{flex:1;min-width:0;border:1px solid rgba(244,234,217,.2);background:#0d0910;color:var(--cream);padding:11px 12px;font:12px "DM Mono",monospace}
+.upload-button{display:flex;align-items:center;padding:0 14px;background:var(--acid);color:#101008;font:600 12px "Space Grotesk",sans-serif;cursor:pointer;white-space:nowrap}
+.upload-button input{display:none}
+.file-panel-status,.file-empty{color:#b5aa9f;font:10px "DM Mono",monospace;margin:8px 0}
+.file-list{border-top:1px solid rgba(244,234,217,.12)}
+.file-row{display:grid;grid-template-columns:52px minmax(0,1fr) 90px 90px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(244,234,217,.1);font-size:12px}
+.file-kind,.file-meta{color:#9f9290;font:9px "DM Mono",monospace}
+.file-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.file-row a{color:var(--acid);font:9px "DM Mono",monospace;text-decoration:none;text-align:right}
+@media(max-width:600px){.file-panel-tools{align-items:stretch;flex-direction:column}.upload-button{justify-content:center;padding:12px}.file-row{grid-template-columns:42px minmax(0,1fr) 55px}.file-row a{grid-column:2;text-align:left}}
