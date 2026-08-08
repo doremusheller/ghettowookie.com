@@ -219,3 +219,13 @@
 .vault-open .preview-roster{display:block}
 
 .tracks-mode{display:flex;flex-direction:column}.tracks-mode .media-viewer{order:1}.tracks-mode .song-display{order:2}.tracks-mode .file-panel-status{order:3}.tracks-mode .file-list{order:4}
+/* Media upload flow: browse first, then add and describe a new asset. */
+.media-mode .file-panel-tools{grid-template-columns:minmax(0,1fr) minmax(220px,1fr) auto;align-items:end}
+.media-mode #fileFilter{order:0;grid-column:1/-1;margin-bottom:4px}
+.media-mode .media-upload-label{order:1;grid-column:1/-1;margin:4px 0 0}
+.media-mode #mediaDepictsField{order:2;grid-column:1}
+.media-mode #mediaDescriptionField{order:3;grid-column:2}
+.media-mode #mediaUploadControl{order:4;display:flex;align-self:stretch}
+.media-mode #mediaSubmit{order:5;display:flex;align-self:stretch}
+.media-mode #fileSelectionStatus{order:6;grid-column:1/-1}
+@media(max-width:760px){.media-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.media-mode #fileFilter{width:auto}.media-mode #mediaUploadControl,.media-mode #mediaSubmit{align-self:stretch}}
