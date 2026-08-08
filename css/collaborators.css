@@ -195,3 +195,14 @@
 .tracks-mode .track-upload-label{display:block;grid-column:1/-1;margin:4px 0 0;color:var(--acid);font:10px "DM Mono",monospace;letter-spacing:.12em}
 .tracks-mode #trackTitleField,.tracks-mode #trackLeadField{display:flex}
 @media(max-width:760px){.tracks-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.tracks-mode #fileFilter{width:auto}}
+
+.media-meta-field{border:0;margin:0;padding:0}
+.media-meta-field legend{padding:0 0 5px;color:var(--acid);font:9px "DM Mono",monospace;letter-spacing:.05em}
+.depicts-checks{display:grid;grid-template-columns:repeat(2,minmax(110px,1fr));gap:5px 10px}
+.depicts-checks label{color:var(--cream);font:11px "Space Grotesk",sans-serif;white-space:nowrap}
+.depicts-checks input{accent-color:var(--acid);margin-right:5px}
+.media-mode .file-panel-tools{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,auto) minmax(220px,1fr) auto;gap:10px;align-items:end}
+.media-mode #fileFilter{grid-column:1/-1;width:240px;flex:initial}
+.media-mode .media-meta-field.is-media{display:flex}
+.media-mode .track-submit,.media-mode .new-song-button{display:none!important}
+@media(max-width:760px){.media-mode .file-panel-tools{display:flex;flex-direction:column;align-items:stretch}.media-mode #fileFilter{width:auto}.depicts-checks{grid-template-columns:repeat(2,minmax(0,1fr))}}
