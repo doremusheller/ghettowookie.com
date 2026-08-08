@@ -252,3 +252,6 @@
 .tracks-mode.is-adding .track-submit{display:flex!important}
 .tracks-mode.is-adding .new-track-button{order:0}
 @media(max-width:760px){.tracks-mode .new-track-button{width:100%}}
+
+/* Native hidden state must win over flex display rules. */
+.new-media-button[hidden],.new-track-button[hidden],.media-compose[hidden],.track-compose[hidden]{display:none!important}
