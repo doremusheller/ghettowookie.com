@@ -109,7 +109,7 @@
 
 .collaborators-page .auth-panel.is-authenticated .auth-panel>div{grid-template-columns:12px 1fr}.collaborators-page .auth-panel.is-authenticated #authState{font-size:18px}
 .tool-rail{position:fixed;z-index:20;left:14px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:9px;padding:12px 7px;border:1px solid rgba(217,255,63,.34);background:rgba(12,8,16,.9);box-shadow:0 18px 45px rgba(0,0,0,.35)}
-.tool-rail-label{writing-mode:vertical-rl;transform:rotate(180deg);margin:0 0 4px;color:var(--acid);font:8px "DM Mono",monospace;letter-spacing:.16em}
+.tool-rail-label{writing-mode:initial;transform:none;margin:0 0 4px;color:var(--acid);font:8px "DM Mono",monospace;letter-spacing:.16em}
 .tool-rail a{display:grid;place-items:center;width:34px;height:34px;border:1px solid rgba(244,234,217,.16);color:var(--cream);text-decoration:none;transition:transform .2s,border-color .2s,background .2s}
 .tool-rail a:hover{transform:translateX(3px);border-color:var(--acid);background:rgba(217,255,63,.12)}
 .tool-rail img{width:18px;height:18px;object-fit:contain}
