@@ -268,3 +268,13 @@
 
 .archive-track-button{margin-top:12px;border:1px solid rgba(255,120,120,.55);background:transparent;color:#ffb0aa;padding:9px 13px;font:10px "DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em;cursor:pointer}
 .archive-track-button:hover{background:rgba(255,100,100,.12)}
+
+/* Compact Working Track review controls directly beneath the player. */
+.tracks-mode .approval-panel{margin-top:8px;padding-top:10px}
+.tracks-mode .approval-panel>.eyebrow{margin:0 0 7px}
+.tracks-mode .approval-grid{gap:8px}
+.tracks-mode .approval-card{padding:9px}
+.tracks-mode .approval-card h5{margin:0 0 7px;font-size:17px}
+.tracks-mode .approval-card select,.tracks-mode .approval-card textarea{padding:6px;margin-bottom:6px;font-size:11px}
+.tracks-mode .approval-card textarea{min-height:48px}
+.tracks-mode .approval-card .upload-button{padding:7px 9px}
