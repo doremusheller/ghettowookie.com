@@ -119,3 +119,4 @@
 @media(max-width:760px){.tool-rail{position:static;transform:none;flex-direction:row;justify-content:center;margin:12px auto 0;width:max-content}.tool-rail-label{writing-mode:horizontal-tb;transform:none;margin:0 3px 0 0}.tool-rail a:hover{transform:translateY(-2px)}}
 
 .tool-rail .tool-gw-logo{width:24px;height:24px;border-radius:50%;object-fit:cover}
+.tool-rail a{width:42px;height:42px}.tool-rail img{width:22px;height:22px}.tool-rail .tool-gw-logo{width:29px;height:29px}
