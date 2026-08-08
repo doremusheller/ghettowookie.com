@@ -123,3 +123,9 @@
 .tool-rail a{position:relative}
 .tool-rail a:hover:after{content:attr(title);position:absolute;left:52px;top:50%;transform:translateY(-50%);z-index:30;white-space:nowrap;padding:8px 10px;border:1px solid rgba(217,255,63,.5);background:#17101d;color:var(--cream);font:10px "DM Mono",monospace;letter-spacing:.03em;box-shadow:0 8px 20px rgba(0,0,0,.35);pointer-events:none}
 @media(max-width:760px){.tool-rail a:hover:after{left:50%;top:auto;bottom:-38px;transform:translateX(-50%);font-size:9px}.tool-rail{z-index:40}}
+
+.prompt-field{display:none;flex:1;flex-direction:column;gap:5px;color:var(--acid);font:9px "DM Mono",monospace;letter-spacing:.05em}
+.prompt-field.is-lyrics{display:flex}
+.prompt-field textarea{width:100%;min-height:58px;resize:vertical;border:1px solid rgba(217,255,63,.3);background:#0d0910;color:var(--cream);padding:9px;font:11px "Space Grotesk",sans-serif;box-sizing:border-box}
+.prompt-field textarea::placeholder{color:#8f8585}
+@media(max-width:600px){.prompt-field.is-lyrics{display:flex}.prompt-field textarea{min-height:74px}}
