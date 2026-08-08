@@ -117,3 +117,5 @@
 .tool-text-logo.distro{font-size:11px;letter-spacing:-.08em}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 @media(max-width:760px){.tool-rail{position:static;transform:none;flex-direction:row;justify-content:center;margin:12px auto 0;width:max-content}.tool-rail-label{writing-mode:horizontal-tb;transform:none;margin:0 3px 0 0}.tool-rail a:hover{transform:translateY(-2px)}}
+
+.tool-rail .tool-gw-logo{width:24px;height:24px;border-radius:50%;object-fit:cover}
