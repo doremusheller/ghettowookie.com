@@ -106,3 +106,5 @@
  .collaborators-page .vault-studio img{aspect-ratio:16/9;min-height:0}
  .collaborators-page .vault-hero h1{font-size:clamp(48px,14vw,78px)}
 }
+
+.collaborators-page .auth-panel.is-authenticated .auth-panel>div{grid-template-columns:12px 1fr}.collaborators-page .auth-panel.is-authenticated #authState{font-size:18px}
