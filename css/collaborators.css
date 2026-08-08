@@ -54,3 +54,5 @@
  .collaborators-page .band-tile{min-height:240px}
  .collaborators-page .roster-heading{display:block}
 }
+
+.collaborators-page .asset-number{display:none!important}
