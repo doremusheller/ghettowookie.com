@@ -255,3 +255,13 @@
 
 /* Native hidden state must win over flex display rules. */
 .new-media-button[hidden],.new-track-button[hidden],.media-compose[hidden],.track-compose[hidden]{display:none!important}
+
+.approval-panel{margin-top:18px;padding-top:16px;border-top:1px solid rgba(244,234,217,.14)}
+.approval-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.approval-card{padding:14px;border:1px solid rgba(217,255,63,.35);background:rgba(30,18,38,.55)}
+.approval-card h5{margin:0 0 12px;color:var(--cream);font-size:20px}
+.approval-card label{display:flex;flex-direction:column;gap:5px;color:var(--acid);font:9px "DM Mono",monospace;text-transform:uppercase}
+.approval-card select,.approval-card textarea{border:1px solid rgba(217,255,63,.3);background:#0d0910;color:var(--cream);padding:9px;font:12px "Space Grotesk",sans-serif;margin-bottom:10px}
+.approval-card textarea{resize:vertical}
+.approval-card .upload-button{display:flex;width:100%;justify-content:center}
+@media(max-width:760px){.approval-grid{grid-template-columns:1fr}}
