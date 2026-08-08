@@ -183,3 +183,4 @@
 .tracks-mode #promptField{display:none}
 
 .tracks-mode #promptField{display:none!important}.tracks-mode .upload-button{display:flex!important}.tracks-mode .new-song-button{display:none!important}
+.tracks-mode .track-submit{display:flex!important}
