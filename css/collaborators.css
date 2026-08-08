@@ -234,3 +234,12 @@
 .media-mode #mediaSubmit{grid-column:3;width:100%;min-width:140px;justify-content:center}
 .media-mode #fileSelectionStatus{grid-column:1/-1}
 @media(max-width:760px){.media-mode #mediaUploadControl,.media-mode #mediaSubmit{width:100%}}
+
+/* Media modules have a browse state and a separate upload state. */
+.media-mode .new-media-button{display:flex;grid-column:1/-1;order:1;width:max-content}
+.media-mode .media-compose{display:none!important}
+.media-mode.is-adding .media-compose{display:flex!important}
+.media-mode.is-adding .media-upload-label{display:block!important}
+.media-mode.is-adding .media-submit{display:flex!important}
+.media-mode.is-adding .new-media-button{order:0}
+@media(max-width:760px){.media-mode .new-media-button{width:100%}}
