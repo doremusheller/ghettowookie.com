@@ -287,3 +287,5 @@
 .approval-meter{display:inline-flex;align-items:center;gap:5px;margin-left:auto;margin-right:18px;color:var(--muted,#9b8f95);font:9px "DM Mono",monospace;white-space:nowrap}.approval-meter-label{margin-right:2px}.approval-dot{display:inline-block;width:9px;height:9px;border-radius:50%;border:1px solid rgba(244,234,217,.45);background:#50484d}.approval-dot.approved{background:#70e000;border-color:#70e000;box-shadow:0 0 8px rgba(112,224,0,.5)}.approval-dot.rejected{background:#ff4d5d;border-color:#ff4d5d;box-shadow:0 0 8px rgba(255,77,93,.45)}.approval-result{font-family:"DM Mono",monospace;text-transform:uppercase;letter-spacing:.06em}.approval-result.ready{color:#70e000}.approval-result.rejected{color:#ff4d5d}.approval-result.pending{color:#f5c04a}
 
 .previous-comments{display:block;margin-top:6px;color:#a99ca3;font:10px/1.4 "DM Mono",monospace;white-space:pre-wrap;max-height:42px;overflow:auto}.approval-card label{display:block}
+
+.lyrics-mode #editSongButton{display:inline-block}
