@@ -129,3 +129,5 @@
 .prompt-field textarea{width:100%;min-height:58px;resize:vertical;border:1px solid rgba(217,255,63,.3);background:#0d0910;color:var(--cream);padding:9px;font:11px "Space Grotesk",sans-serif;box-sizing:border-box}
 .prompt-field textarea::placeholder{color:#8f8585}
 @media(max-width:600px){.prompt-field.is-lyrics{display:flex}.prompt-field textarea{min-height:74px}}
+
+.prompt-field{display:flex}
