@@ -5,6 +5,7 @@
   const SCOPES=["User.Read","Files.ReadWrite"];
   const APPROVAL_DIR="Ghetto Wookie Studios/Studio Production/Archived Working Tracks";
   const $=id=>document.getElementById(id);
+  const inWorkingTracks=()=>($("filePanelTitle")?.textContent||"").trim()==="Working Tracks";
   let helper=null;
 
   async function token(){
@@ -35,7 +36,7 @@
   }
 
   async function load(id){
-    if(!id)return;
+    if(!id||!inWorkingTracks())return;
     try{
       const t=await token();
       const r=await fetch(approvalUrl(id),{headers:{Authorization:"Bearer "+t}});
@@ -45,6 +46,7 @@
 
   async function save(role){
     const id=window.activeApprovalTrackId,s=$("approvalStatus");
+    if(!inWorkingTracks())return;
     if(!id){if(s)s.textContent="No active track selected.";return}
     if(s)s.textContent="Saving "+role+" decision…";
     try{
@@ -52,11 +54,7 @@
       let a={};
       const existing=await fetch(approvalUrl(id),{headers:{Authorization:"Bearer "+t}});
       if(existing.ok)a=await existing.json();
-      a[role]={
-        decision:$(role==="Shag"?"shagApproval":"boApproval").value,
-        comments:$(role==="Shag"?"shagApprovalComments":"boApprovalComments").value.trim(),
-        savedAt:new Date().toISOString()
-      };
+      a[role]={decision:$(role==="Shag"?"shagApproval":"boApproval").value,comments:$(role==="Shag"?"shagApprovalComments":"boApprovalComments").value.trim(),savedAt:new Date().toISOString()};
       const r=await fetch(approvalUrl(id),{method:"PUT",headers:{Authorization:"Bearer "+t,"Content-Type":"application/json"},body:JSON.stringify(a)});
       if(!r.ok)throw new Error("Save returned "+r.status);
       apply(a);
@@ -68,6 +66,7 @@
     const row=e.target.closest(".tracks-mode .song-row");
     if(!row)return;
     setTimeout(()=>{
+      if(!inWorkingTracks())return;
       const archive=$("archiveTrackButton");
       if(archive)archive.hidden=false;
       load(row.dataset.itemId);
@@ -77,6 +76,9 @@
   [["saveShagApproval","Shag"],["saveBoApproval","Bo"]].forEach(([id,role])=>{
     const button=$(id);
     if(!button)return;
-    button.addEventListener("click",e=>{e.preventDefault();e.stopImmediatePropagation();save(role)},true);
+    button.addEventListener("click",e=>{
+      if(!inWorkingTracks())return;
+      e.preventDefault();e.stopImmediatePropagation();save(role)
+    },true);
   });
 })();
