@@ -62,24 +62,292 @@
 /* Desktop hero: preserve the band’s full upper silhouettes. */
 @media (min-width:761px){.hero-image{background-position:center top}}
 
-/* Sponsors: intentionally awaiting the right transmissions. */
-.sponsors-page{background:#0a070d}.sponsors-masthead{min-height:clamp(430px,58svh,650px);padding:clamp(126px,17vw,200px) clamp(22px,9vw,150px) clamp(74px,10vw,130px);background:radial-gradient(circle at 81% 42%,rgba(236,156,44,.2),transparent 19%),radial-gradient(circle at 72% 64%,rgba(123,48,145,.28),transparent 31%),#0a070d;border-bottom:1px solid rgba(244,234,217,.12)}.sponsors-masthead h1{max-width:800px;font-size:clamp(56px,8vw,122px);line-height:.88;letter-spacing:-.07em;margin:0}.sponsors-masthead h1 em,.sponsor-stage h2 em{font-family:Georgia,serif;font-weight:400}.sponsors-masthead>p:last-child{max-width:570px;color:#d7cabc;font-size:clamp(17px,1.7vw,23px);line-height:1.58;margin:30px 0 0}.sponsor-stage{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(260px,1.1fr);gap:clamp(50px,10vw,160px);align-items:center;background:#140d18}.sponsor-stage-copy h2{font-size:clamp(48px,5.3vw,84px);line-height:.9;letter-spacing:-.06em;margin:0}.sponsor-stage-copy>p:last-child{max-width:480px;color:#d7cabc;font-size:18px;line-height:1.6;margin:28px 0 0}.sponsor-transmission{min-height:clamp(310px,34vw,450px);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(25px,4vw,48px);border:1px solid rgba(243,162,55,.56);background:radial-gradient(circle at 50% 50%,rgba(107,44,131,.35),transparent 38%),linear-gradient(145deg,rgba(23,14,30,.97),rgba(7,5,9,.98));box-shadow:0 25px 70px rgba(0,0,0,.34)}.sponsor-transmission span{font:11px "DM Mono",monospace;letter-spacing:.15em;color:#f3a237}.sponsor-transmission strong{font-size:clamp(31px,3.8vw,58px);line-height:.92;letter-spacing:-.055em}.sponsor-transmission i{align-self:flex-end;color:#f3a237;font-size:clamp(34px,5vw,68px);font-style:normal}@media(max-width:760px){.sponsors-masthead{min-height:390px;padding-top:120px}.sponsors-masthead h1{font-size:clamp(52px,15vw,74px)}.sponsor-stage{grid-template-columns:1fr}.sponsor-transmission{min-height:280px}}
+/* Sponsors */
+.sponsors-page{background:#0a070d}
+.sponsors-masthead{
+  min-height:clamp(390px,52svh,560px);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:clamp(126px,14vw,176px) clamp(22px,9vw,150px) clamp(68px,8vw,104px);
+  background:
+    radial-gradient(circle at 82% 34%,rgba(236,156,44,.2),transparent 21%),
+    radial-gradient(circle at 70% 72%,rgba(123,48,145,.28),transparent 32%),
+    #0a070d;
+  border-bottom:1px solid rgba(244,234,217,.12)
+}
+.sponsors-masthead h1{
+  max-width:900px;
+  margin:0;
+  font-size:clamp(54px,7.4vw,108px);
+  line-height:.89;
+  letter-spacing:-.07em
+}
+.sponsors-masthead h1 em,
+.sponsor-stage h2 em{font-family:Georgia,serif;font-weight:400}
+.sponsors-masthead>p:last-child{
+  max-width:610px;
+  margin:26px 0 0;
+  color:#d7cabc;
+  font-size:clamp(17px,1.6vw,22px);
+  line-height:1.55
+}
 
-/* Sponsor roster: two real signals, no filler. */
-.sponsor-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.sponsor-card{min-height:360px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:flex-start;padding:22px;text-decoration:none;color:var(--cream);border:1px solid rgba(243,162,55,.46);background:linear-gradient(145deg,#1e1328,#08060a);box-shadow:0 20px 52px rgba(0,0,0,.26);transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}.sponsor-card:hover{transform:translateY(-7px);border-color:#ffc367;box-shadow:0 28px 64px rgba(0,0,0,.42)}.sponsor-card:after{content:"";position:absolute;inset:auto -25% -55% 28%;height:70%;border:1px solid rgba(243,162,55,.2);border-radius:50%;pointer-events:none}.sponsor-card img{display:block;position:relative;z-index:1;width:100%;height:122px;object-fit:contain;object-position:center;margin:24px 0 28px}.sponsor-label,.sponsor-card i{position:relative;z-index:1;font:10px "DM Mono",monospace;letter-spacing:.12em;text-transform:uppercase;font-style:normal}.sponsor-label{color:#f3a237}.sponsor-card strong{position:relative;z-index:1;margin-top:auto;font-size:clamp(25px,2.7vw,40px);line-height:.98;letter-spacing:-.045em}.sponsor-card i{margin-top:18px;color:#d7cabc}.sponsor-oti{border-color:rgba(208,42,58,.72);background:radial-gradient(circle at 82% 16%,rgba(185,0,22,.22),transparent 31%),linear-gradient(145deg,#092544,#070e19)}.sponsor-oti:hover{border-color:#ed5663}.sponsor-oti .sponsor-label{color:#ff9ca5}.sponsor-cms{background:radial-gradient(circle at 82% 16%,rgba(243,162,55,.18),transparent 31%),linear-gradient(145deg,#17100b,#080707)}.sponsor-disclaimer{padding-top:0;padding-bottom:clamp(68px,9vw,120px);background:#140d18}.sponsor-disclaimer p{max-width:880px;margin:0;color:#938690;font:10px/1.65 "DM Mono",monospace;letter-spacing:.07em;text-transform:uppercase}@media(max-width:760px){.sponsor-grid{grid-template-columns:1fr}.sponsor-card{min-height:300px}.sponsor-card img{height:96px;margin:18px 0 24px}.sponsor-disclaimer{padding-top:0}.sponsor-disclaimer p{font-size:9px;line-height:1.65}}
+.sponsor-stage{
+  display:block;
+  background:#140d18;
+  padding-top:clamp(68px,8vw,112px)
+}
+.sponsor-stage-copy{
+  max-width:790px;
+  margin:0 0 clamp(38px,5vw,64px)
+}
+.sponsor-stage-copy h2{
+  margin:0;
+  font-size:clamp(44px,5vw,72px);
+  line-height:.92;
+  letter-spacing:-.055em
+}
+.sponsor-stage-copy>p:last-child{
+  max-width:660px;
+  margin:22px 0 0;
+  color:#d7cabc;
+  font-size:clamp(16px,1.5vw,19px);
+  line-height:1.6
+}
 
+.sponsor-grid{
+  display:grid;
+  grid-template-columns:repeat(12,minmax(0,1fr));
+  gap:clamp(16px,2.2vw,28px);
+  width:100%
+}
+.sponsor-card{
+  grid-column:span 6;
+  min-width:0;
+  min-height:340px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+  padding:clamp(22px,2.7vw,34px);
+  color:var(--cream);
+  text-decoration:none;
+  border:1px solid rgba(243,162,55,.46);
+  background:linear-gradient(145deg,#1e1328,#08060a);
+  box-shadow:0 22px 54px rgba(0,0,0,.28);
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease
+}
+.sponsor-card:after{
+  content:"";
+  position:absolute;
+  z-index:0;
+  right:-20%;
+  bottom:-55%;
+  width:75%;
+  height:92%;
+  border:1px solid rgba(243,162,55,.17);
+  border-radius:50%;
+  pointer-events:none
+}
+.sponsor-card:hover{
+  transform:translateY(-6px);
+  border-color:#ffc367;
+  box-shadow:0 30px 68px rgba(0,0,0,.43)
+}
+.sponsor-card:focus-visible,
+.sponsor-card a:focus-visible{
+  outline:3px solid var(--acid);
+  outline-offset:4px
+}
+.sponsor-card>*{position:relative;z-index:1}
+.sponsor-label,
+.sponsor-card i{
+  font:10px "DM Mono",monospace;
+  letter-spacing:.13em;
+  text-transform:uppercase;
+  font-style:normal
+}
+.sponsor-label{color:#f3a237}
+.sponsor-card>img{
+  width:100%;
+  height:132px;
+  margin:30px 0 30px;
+  object-fit:contain;
+  object-position:center
+}
+.sponsor-card strong{
+  display:block;
+  margin-top:auto;
+  font-size:clamp(26px,2.7vw,40px);
+  line-height:1;
+  letter-spacing:-.045em
+}
+.sponsor-card i{
+  margin-top:18px;
+  color:#d7cabc
+}
+.sponsor-card p{
+  margin:14px 0 0;
+  color:#ddc7b1;
+  font-size:14px;
+  line-height:1.5
+}
 
-/* Wookie's Own is a house patron, not a destination. */
-.sponsor-endor{grid-column:1/-1;min-height:330px;align-items:center;text-align:center;border-color:rgba(211,166,76,.68);background:radial-gradient(circle at 50% 46%,rgba(90,121,58,.18),transparent 31%),linear-gradient(145deg,#10271d,#03130d 72%);cursor:default}.sponsor-endor:hover{transform:none;border-color:rgba(231,195,113,.94);box-shadow:0 20px 52px rgba(0,0,0,.26)}.sponsor-endor:after{inset:auto 14% -63%;width:72%;height:112%;border-color:rgba(211,166,76,.16)}.sponsor-endor .sponsor-label{color:#d9b66f}.sponsor-endor img{width:min(100%,320px);height:210px;margin:8px 0 12px;image-rendering:auto}.sponsor-endor strong{margin-top:auto;color:#f2dfb8;font-family:Georgia,serif;font-weight:400;letter-spacing:.015em;line-height:1.02}@media(max-width:760px){.sponsor-endor{grid-column:auto;min-height:330px}.sponsor-endor img{height:185px;width:min(100%,280px)}}
+.sponsor-oti{
+  border-color:rgba(208,42,58,.72);
+  background:
+    radial-gradient(circle at 82% 16%,rgba(185,0,22,.22),transparent 31%),
+    linear-gradient(145deg,#092544,#070e19)
+}
+.sponsor-oti:hover{border-color:#ed5663}
+.sponsor-oti .sponsor-label{color:#ff9ca5}
+.sponsor-cms{
+  background:
+    radial-gradient(circle at 82% 16%,rgba(243,162,55,.18),transparent 31%),
+    linear-gradient(145deg,#17100b,#080707)
+}
 
-/* The support system behind the galaxy's busiest drummer. */
-.sponsor-endor{grid-column:auto;min-height:360px}.sponsor-endor img{width:min(100%,280px);height:170px;margin:16px 0 18px}.sponsor-yutes{border-color:rgba(222,119,42,.7);background:radial-gradient(circle at 50% 20%,rgba(189,92,34,.2),transparent 36%),linear-gradient(145deg,#26120d,#090609 72%)}.sponsor-yutes:hover{transform:none;border-color:#efae65;box-shadow:0 20px 52px rgba(0,0,0,.26)}.sponsor-yutes:after{border-color:rgba(239,174,101,.16)}.sponsor-yutes .sponsor-label{color:#efae65}.sponsor-yutes img{height:172px;width:min(100%,220px);margin:12px auto 18px}.sponsor-yutes strong{margin-top:0;font-family:Georgia,serif;font-weight:400;letter-spacing:.01em}.sponsor-yutes p{position:relative;z-index:1;margin:14px 0 0;color:#ddc7b1;font-size:13px;line-height:1.45}@media(max-width:760px){.sponsor-endor{grid-column:auto;min-height:300px}.sponsor-endor img{height:138px}.sponsor-yutes img{height:160px}}
+.sponsor-endor,
+.sponsor-yutes{cursor:default}
+.sponsor-endor:hover,
+.sponsor-yutes:hover,
+.sponsor-literary:hover{
+  transform:none;
+  box-shadow:0 22px 54px rgba(0,0,0,.28)
+}
+.sponsor-endor{
+  border-color:rgba(211,166,76,.68);
+  background:
+    radial-gradient(circle at 50% 34%,rgba(90,121,58,.2),transparent 34%),
+    linear-gradient(145deg,#10271d,#03130d 72%)
+}
+.sponsor-endor:hover{border-color:rgba(231,195,113,.94)}
+.sponsor-endor .sponsor-label{color:#d9b66f}
+.sponsor-yutes{
+  border-color:rgba(222,119,42,.7);
+  background:
+    radial-gradient(circle at 50% 24%,rgba(189,92,34,.2),transparent 36%),
+    linear-gradient(145deg,#26120d,#090609 72%)
+}
+.sponsor-yutes:hover{border-color:#efae65}
+.sponsor-yutes .sponsor-label{color:#efae65}
+.sponsor-endor>a,
+.sponsor-yutes>a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:210px;
+  margin:14px 0 20px;
+  line-height:0
+}
+.sponsor-endor>a img,
+.sponsor-yutes>a img{
+  display:block;
+  width:100%;
+  height:100%;
+  margin:0;
+  object-fit:contain;
+  object-position:center
+}
+.sponsor-endor strong,
+.sponsor-yutes strong{
+  margin-top:auto;
+  font-family:Georgia,serif;
+  font-weight:400;
+  letter-spacing:.01em
+}
 
-/* A benefactor of unknown provenance, with an unusually good library. */
-.sponsor-literary{grid-column:1/-1;min-height:290px;display:grid;grid-template-columns:minmax(190px,.68fr) minmax(0,1.32fr);gap:clamp(24px,5vw,72px);align-items:center;border-color:rgba(205,147,58,.68);background:radial-gradient(circle at 80% 56%,rgba(145,69,22,.2),transparent 34%),linear-gradient(145deg,#21100b,#0b0809 73%)}.sponsor-literary:hover{transform:none;border-color:#eac06d;box-shadow:0 20px 52px rgba(0,0,0,.26)}.sponsor-literary:after{border-color:rgba(220,164,69,.16)}.sponsor-literary .sponsor-label{color:#e1af58}.sponsor-literary a{position:relative;z-index:1;display:block;justify-self:center;width:min(100%,265px);line-height:0}.sponsor-literary img{width:100%;height:242px;margin:0;object-fit:cover;border:1px solid rgba(234,192,109,.38)}.sponsor-literary-copy{position:relative;z-index:1;text-align:left}.sponsor-literary strong{display:block;margin:0;font-family:Georgia,serif;font-weight:400;letter-spacing:.01em}.sponsor-literary p{margin:15px 0 0;max-width:520px;color:#ddc7b1;font-size:15px;line-height:1.5}@media(max-width:760px){.sponsor-literary{grid-column:auto;min-height:0;display:flex;gap:0;align-items:center}.sponsor-literary a{width:min(100%,245px);margin:18px auto 2px}.sponsor-literary img{height:190px}.sponsor-literary-copy{text-align:center}.sponsor-literary p{font-size:14px}}
+.sponsor-literary{
+  grid-column:1/-1;
+  min-height:410px;
+  display:grid;
+  grid-template-columns:minmax(280px,.85fr) minmax(0,1.15fr);
+  gap:clamp(30px,5vw,76px);
+  align-items:center;
+  padding:clamp(26px,3.5vw,46px);
+  border-color:rgba(205,147,58,.68);
+  background:
+    radial-gradient(circle at 80% 56%,rgba(145,69,22,.2),transparent 34%),
+    linear-gradient(145deg,#21100b,#0b0809 73%)
+}
+.sponsor-literary:hover{border-color:#eac06d}
+.sponsor-literary>a{
+  display:block;
+  justify-self:center;
+  width:min(100%,430px);
+  line-height:0
+}
+.sponsor-literary img{
+  display:block;
+  width:100%;
+  height:330px;
+  margin:0;
+  object-fit:contain;
+  object-position:center;
+  border:1px solid rgba(234,192,109,.38);
+  background:rgba(4,3,4,.38)
+}
+.sponsor-literary-copy{text-align:left}
+.sponsor-literary-copy .sponsor-label{display:block;margin-bottom:18px;color:#e1af58}
+.sponsor-literary-copy strong{
+  margin:0;
+  font-family:Georgia,serif;
+  font-size:clamp(34px,4vw,56px);
+  font-weight:400;
+  letter-spacing:.01em
+}
+.sponsor-literary-copy p{
+  max-width:520px;
+  margin:18px 0 0;
+  font-size:17px
+}
 
-/* The anonymous benefactor now gets the wall space his money insists upon. */
-.sponsor-literary{min-height:440px;grid-template-columns:minmax(300px,.95fr) minmax(0,1.05fr);padding:clamp(24px,3vw,42px)}.sponsor-literary a{width:min(100%,430px)}.sponsor-literary img{height:360px}.sponsor-literary-copy strong{font-size:clamp(36px,4vw,58px)}.sponsor-literary-copy p{font-size:17px;max-width:490px}@media(max-width:760px){.sponsor-literary{min-height:0;display:flex;padding:22px}.sponsor-literary a{width:min(100%,340px)}.sponsor-literary img{height:300px}.sponsor-literary-copy strong{font-size:32px}.sponsor-literary-copy p{font-size:15px}}
+.sponsor-disclaimer{
+  padding-top:0;
+  padding-bottom:clamp(68px,9vw,120px);
+  background:#140d18
+}
+.sponsor-disclaimer p{
+  max-width:920px;
+  margin:0;
+  color:#938690;
+  font:10px/1.7 "DM Mono",monospace;
+  letter-spacing:.07em;
+  text-transform:uppercase
+}
 
-/* Full-size artwork links for house sponsors. */
-.sponsor-endor>a,.sponsor-yutes>a{position:relative;z-index:1;display:block;width:100%;line-height:0}.sponsor-endor>a img,.sponsor-yutes>a img{display:block;margin-left:auto;margin-right:auto}.sponsor-yutes{min-height:360px}.sponsor-yutes>a{width:min(100%,300px);margin:0 auto}.sponsor-yutes>a img{width:100%;height:230px;margin-top:0;margin-bottom:16px;object-fit:cover;object-position:center}.sponsor-yutes strong{font-size:clamp(31px,3.2vw,45px)}.sponsor-yutes p{font-size:14px}@media(max-width:760px){.sponsor-yutes>a{width:min(100%,280px)}.sponsor-yutes>a img{height:220px}}
+@media(max-width:760px){
+  .sponsors-masthead{
+    min-height:360px;
+    padding-top:116px;
+    padding-bottom:58px
+  }
+  .sponsors-masthead h1{font-size:clamp(49px,14vw,70px)}
+  .sponsor-stage{padding-top:62px}
+  .sponsor-grid{grid-template-columns:1fr}
+  .sponsor-card,
+  .sponsor-literary{
+    grid-column:auto;
+    min-height:310px;
+    padding:22px
+  }
+  .sponsor-card>img{height:105px;margin:24px 0}
+  .sponsor-endor>a,
+  .sponsor-yutes>a{height:180px;margin:12px 0 18px}
+  .sponsor-literary{
+    min-height:0;
+    display:flex;
+    gap:24px;
+    align-items:center
+  }
+  .sponsor-literary>a{width:min(100%,340px)}
+  .sponsor-literary img{height:260px}
+  .sponsor-literary-copy{text-align:center}
+  .sponsor-literary-copy .sponsor-label{margin-bottom:14px}
+  .sponsor-literary-copy strong{font-size:32px}
+  .sponsor-literary-copy p{font-size:15px}
+  .sponsor-disclaimer p{font-size:9px}
+}
