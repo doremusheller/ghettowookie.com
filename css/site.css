@@ -351,3 +351,9 @@
   .sponsor-literary-copy p{font-size:15px}
   .sponsor-disclaimer p{font-size:9px}
 }
+
+
+/* Keep the three official video cards evenly sized across wide screens. */
+@media (min-width:761px){
+  .official-visuals .video-rack{grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,24px)}
+}
