@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Let The Wookie Win Trivia Nights | Ghetto Wookie</title>
+  <meta name="description" content="Star Wars-themed trivia nights are coming to Siesta Key, Florida, hosted by Ghetto Wookie and Spinmaster R2DJ.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css?v=19">
+  <style>
+    .trivia-page { background:#0b0809; }
+    .trivia-masthead {
+      position:relative;
+      overflow:hidden;
+      padding:clamp(110px,15vw,190px) clamp(22px,9vw,150px) clamp(78px,10vw,130px);
+      background:radial-gradient(ellipse at 78% 18%,rgba(157,100,255,.23),transparent 37%),linear-gradient(130deg,#0b0809 0%,#17101b 65%,#24172b 100%);
+    }
+    .trivia-masthead::after {
+      content:"✦  ·  ✧  ·  ✦";
+      position:absolute;
+      right:clamp(20px,8vw,125px);
+      top:22%;
+      color:rgba(217,255,63,.62);
+      font-size:clamp(28px,5vw,64px);
+      letter-spacing:.35em;
+      transform:rotate(-12deg);
+      pointer-events:none;
+    }
+    .trivia-masthead h1 { max-width:950px; margin:0; font-size:clamp(52px,9vw,132px); line-height:.86; letter-spacing:-.075em; }
+    .trivia-masthead h1 em { font-family:Georgia,serif; font-weight:400; letter-spacing:-.07em; }
+    .trivia-masthead .trivia-deck { max-width:680px; margin:32px 0 0; color:#e1d6cc; font-size:clamp(18px,2vw,24px); line-height:1.5; }
+    .trivia-location { display:flex; gap:12px; align-items:center; margin-top:30px; color:var(--acid); font:12px "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
+    .trivia-location span:first-child { font-size:19px; }
+    .trivia-section { padding:clamp(75px,10vw,135px) clamp(22px,9vw,150px); }
+    .trivia-announcement { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(250px,.8fr); gap:clamp(35px,8vw,120px); align-items:center; background:#e9e2d6; color:#1a1320; }
+    .trivia-announcement .eyebrow { color:#7253a6; }
+    .trivia-announcement h2 { margin:0; font-size:clamp(39px,5.5vw,82px); line-height:.92; letter-spacing:-.065em; }
+    .trivia-announcement h2 em { font-family:Georgia,serif; font-weight:400; }
+    .trivia-announcement p:not(.eyebrow) { max-width:620px; font-size:18px; line-height:1.6; }
+    .trivia-stamp { border:1px solid rgba(26,19,32,.28); padding:30px; text-align:center; transform:rotate(2deg); }
+    .trivia-stamp strong { display:block; font:500 clamp(16px,2vw,22px) "DM Mono",monospace; letter-spacing:.09em; text-transform:uppercase; }
+    .trivia-stamp span { display:block; margin-top:12px; color:#7253a6; font:12px "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
+    .trivia-roster-heading { max-width:760px; margin-bottom:45px; }
+    .trivia-roster-heading h2 { margin:0; font-size:clamp(42px,6vw,82px); line-height:.92; letter-spacing:-.065em; }
+    .trivia-roster-heading h2 em { font-family:Georgia,serif; font-weight:400; }
+    .trivia-roster-heading>p:last-child { max-width:620px; color:var(--muted); font-size:17px; line-height:1.6; margin-top:22px; }
+    .trivia-roster { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2px; }
+    .trivia-host { min-height:210px; padding:25px; display:flex; flex-direction:column; justify-content:flex-end; background:#24172b; border-top:2px solid var(--violet); }
+    .trivia-host:nth-child(2),.trivia-host:nth-child(6) { background:#302218; border-color:var(--gold); }
+    .trivia-host:nth-child(3),.trivia-host:nth-child(7) { background:#1d2736; border-color:var(--acid); }
+    .trivia-host:nth-child(4) { background:#1d473d; }
+    .trivia-host:nth-child(5) { background:#30274a; }
+    .trivia-host .host-role { margin:0 0 auto; color:var(--acid); font:11px "DM Mono",monospace; letter-spacing:.13em; text-transform:uppercase; }
+    .trivia-host h3 { margin:28px 0 8px; font-size:clamp(22px,2.3vw,31px); line-height:.98; letter-spacing:-.04em; }
+    .trivia-host p:last-child { margin:0; color:#d5c7c6; font-size:14px; line-height:1.5; }
+    .trivia-final { text-align:center; background:radial-gradient(circle at 50% 0,#40215c,transparent 48%),#0b0809; }
+    .trivia-final h2 { max-width:900px; margin:0 auto 28px; font-size:clamp(39px,6vw,82px); line-height:.95; letter-spacing:-.065em; }
+    .trivia-final h2 em { font-family:Georgia,serif; font-weight:400; }
+    .trivia-final>p:not(.eyebrow) { max-width:620px; margin:0 auto 28px; color:#d5c7c6; font-size:17px; line-height:1.6; }
+    @media(max-width:760px) {
+      .trivia-masthead::after { top:11%; right:20px; opacity:.55; }
+      .trivia-announcement { grid-template-columns:1fr; }
+      .trivia-stamp { max-width:420px; }
+      .trivia-roster { grid-template-columns:1fr 1fr; }
+      .trivia-host { min-height:190px; padding:18px; }
+    }
+    @media(max-width:480px) { .trivia-roster { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body class="trivia-page">
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header site-header-solid">
+    <a class="wordmark" href="index.html" aria-label="Ghetto Wookie home"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">The Band</a>
+      <a href="media.html">Media</a>
+      <a href="invasions.html">Tour</a>
+      <a href="trivia.html" aria-current="page">Trivia</a>
+      <a href="sponsors.html">Sponsors</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="trivia-masthead">
+      <p class="eyebrow">A NEW SIesta KEY TRANSMISSION</p>
+      <h1>LET THE<br><em>WOOKIE WIN.</em></h1>
+      <p class="trivia-deck">Star Wars-themed trivia nights are landing in Siesta Key, Florida. Bring your crew, summon your deep-cut knowledge, and prepare to defend your answer when the droid disagrees.</p>
+      <div class="trivia-location"><span aria-hidden="true">✦</span><span>Siesta Key, Florida · Trivia nights incoming</span></div>
+    </section>
+
+    <section class="trivia-announcement trivia-section" aria-labelledby="trivia-announcement-title">
+      <div>
+        <p class="eyebrow">THE FORCE IS STRONG WITH YOUR TEAM</p>
+        <h2 id="trivia-announcement-title">A galaxy of questions.<br><em>One winning table.</em></h2>
+        <p>Ghetto Wookie is bringing Star Wars-themed trivia to Siesta Key, with the band and road crew on event duty and Spinmaster R2DJ handling the interstellar sound. Expect legendary characters, questionable confidence, and the occasional answer delivered with more certainty than accuracy.</p>
+        <p>Gather a team, brush up on your saga, and get ready to let the Wookie win.</p>
+      </div>
+      <div class="trivia-stamp" aria-label="Let the Wookie Win, Star Wars trivia nights, Siesta Key, Florida">
+        <strong>Let The<br>Wookie Win</strong>
+        <span>Star Wars Trivia · Siesta Key, FL</span>
+      </div>
+    </section>
+
+    <section class="trivia-section" aria-labelledby="trivia-roster-title">
+      <div class="trivia-roster-heading">
+        <p class="eyebrow">THE EVENT STAFF</p>
+        <h2 id="trivia-roster-title">Your hosts from<br><em>a galaxy nearby.</em></h2>
+        <p>The groove scoundrels are reporting for trivia duty. Gary has the logistics. Astrognome has the time signatures. Spinmaster R2DJ has the droid-approved soundtrack.</p>
+      </div>
+      <div class="trivia-roster">
+        <article class="trivia-host"><p class="host-role">Fallen Wookie royalty</p><h3>Bodacious Scraggleton XIII</h3><p>Presiding over the questions with copper-gold authority and a paper crown that is not, technically, a prize.</p></article>
+        <article class="trivia-host"><p class="host-role">Velvet Titan of Bass</p><h3>Shag Fantastiq</h3><p>Keeping the room in the groove while teams debate whether that character was in the theatrical cut.</p></article>
+        <article class="trivia-host"><p class="host-role">The Amethyst Siren</p><h3>Luna Voce</h3><p>Bringing cosmic presence, immaculate poise, and a voice that can make even a wrong answer sound final.</p></article>
+        <article class="trivia-host"><p class="host-role">Four arms. Perfect time.</p><h3>Drumma Kaan</h3><p>Keeping the rounds moving with enough rhythm to make the tiebreaker feel like a dance-off.</p></article>
+        <article class="trivia-host"><p class="host-role">Temporal turntablist</p><h3>DJ Astrognome</h3><p>Managing the soundtrack and ensuring each round lands in the correct era, give or take a timeline.</p></article>
+        <article class="trivia-host"><p class="host-role">Road crew · operations</p><h3>Gary the Road Guy</h3><p>Gruff, unfriendly, lethally efficient. Gary will make sure the microphones, answer sheets, and band all arrive.</p></article>
+        <article class="trivia-host"><p class="host-role">Droid DJ · sound systems</p><h3>Spinmaster R2DJ</h3><p>Serving up intergalactic selections, sound effects, and the occasional astromech opinion about your team's answer.</p></article>
+      </div>
+    </section>
+
+    <section class="trivia-final trivia-section">
+      <p class="eyebrow">SIesta KEY, FLORIDA</p>
+      <h2>Bring your best team.<br><em>Leave your certainty at the door.</em></h2>
+      <p>Let The Wookie Win trivia nights are coming to Siesta Key. Event dates and venue details will be announced separately.</p>
+      <a class="button button-gold" href="https://www.instagram.com/ghettowookie/" target="_blank" rel="noreferrer">Follow Ghetto Wookie for updates <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="wordmark" href="index.html"><span class="wordmark-star">✦</span> GHETTO WOOKIE</a>
+    <p>© 2026 Ghetto Wookie. All systems funkational.</p>
+    <div><a href="https://www.instagram.com/ghettowookie/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.youtube.com/channel/UCMTA7sQMYckZrdn3FC0UUag" target="_blank" rel="noreferrer">YouTube ↗</a><a href="https://www.linkedin.com/company/112707297/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+  </footer>
+  <script src="js/site.js?v=6"></script>
+</body>
+</html>
