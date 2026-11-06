@@ -47,7 +47,7 @@
     .trivia-roster-heading h2 em { font-family:Georgia,serif; font-weight:400; }
     .trivia-roster-heading>p:last-child { max-width:620px; color:var(--muted); font-size:17px; line-height:1.6; margin-top:22px; }
     .trivia-roster { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2px; }
-    .trivia-host { min-height:210px; padding:25px; display:flex; flex-direction:column; justify-content:flex-end; background:#24172b; border-top:2px solid var(--violet); }
+    .trivia-roster-featured { grid-template-columns:minmax(0,680px); justify-content:center; }\n    .trivia-roster-featured .trivia-host { min-height:270px; padding:clamp(25px,5vw,54px); }\n    .trivia-host { min-height:210px; padding:25px; display:flex; flex-direction:column; justify-content:flex-end; background:#24172b; border-top:2px solid var(--violet); }
     .trivia-host:nth-child(2),.trivia-host:nth-child(6) { background:#302218; border-color:var(--gold); }
     .trivia-host:nth-child(3),.trivia-host:nth-child(7) { background:#1d2736; border-color:var(--acid); }
     .trivia-host:nth-child(4) { background:#1d473d; }
@@ -76,7 +76,7 @@
     <section class="trivia-masthead">
       <p class="eyebrow">A NEW SIESTA KEY TRANSMISSION</p>
       <h1>LET THE<br><em>WOOKIE WIN.</em></h1>
-      <p class="trivia-deck">Star Wars-themed trivia nights are landing in Siesta Key, Florida. Bring your crew, summon your deep-cut knowledge, and prepare to defend your answer when the droid disagrees.</p>
+      <p class="trivia-deck">Star Wars-themed trivia nights are landing in Siesta Key, Florida, hosted by Spinmaster R2DJ. Bring your crew, summon your deep-cut knowledge, and prepare to defend your answer when the droid disagrees.</p>
       <div class="trivia-location"><span aria-hidden="true">✦</span><span>Siesta Key, Florida · Trivia nights incoming</span></div>
     </section>
 
@@ -84,7 +84,7 @@
       <div>
         <p class="eyebrow">THE FORCE IS STRONG WITH YOUR TEAM</p>
         <h2 id="trivia-announcement-title">A galaxy of questions.<br><em>One winning table.</em></h2>
-        <p>Ghetto Wookie is bringing Star Wars-themed trivia to Siesta Key, with the band and road crew on event duty and Spinmaster R2DJ handling the interstellar sound. Expect legendary characters, questionable confidence, and the occasional answer delivered with more certainty than accuracy.</p>
+        <p>Ghetto Wookie is bringing Star Wars-themed trivia to Siesta Key, hosted by Spinmaster R2DJ. Expect legendary characters, questionable confidence, interstellar sound, and the occasional answer delivered with more certainty than accuracy.</p>
         <p>Gather a team, brush up on your saga, and get ready to let the Wookie win.</p>
       </div>
       <div class="trivia-stamp" aria-label="Let the Wookie Win, Star Wars trivia nights, Siesta Key, Florida">
@@ -95,26 +95,13 @@
 
     <section class="trivia-section" aria-labelledby="trivia-roster-title">
       <div class="trivia-roster-heading">
-        <p class="eyebrow">THE EVENT STAFF</p>
-        <h2 id="trivia-roster-title">Your hosts from<br><em>a galaxy nearby.</em></h2>
-        <p>The groove scoundrels are reporting for trivia duty. Gary has the logistics. Astrognome has the time signatures. Spinmaster R2DJ has the droid-approved soundtrack.</p>
+        <p class="eyebrow">YOUR TRIVIA HOST</p>
+        <h2 id="trivia-roster-title">One droid.<br><em>Unquestionable authority.</em></h2>
+        <p>Spinmaster R2DJ is in command of the questions, the soundtrack, and the official ruling on whether your answer was close enough.</p>
       </div>
-      <div class="trivia-roster">
-        <article class="trivia-host"><p class="host-role">Fallen Wookie royalty</p><h3>Bodacious Scraggleton XIII</h3><p>Presiding over the questions with copper-gold authority and a paper crown that is not, technically, a prize.</p></article>
-        <article class="trivia-host"><p class="host-role">Velvet Titan of Bass</p><h3>Shag Fantastiq</h3><p>Keeping the room in the groove while teams debate whether that character was in the theatrical cut.</p></article>
-        <article class="trivia-host"><p class="host-role">The Amethyst Siren</p><h3>Luna Voce</h3><p>Bringing cosmic presence, immaculate poise, and a voice that can make even a wrong answer sound final.</p></article>
-        <article class="trivia-host"><p class="host-role">Four arms. Perfect time.</p><h3>Drumma Kaan</h3><p>Keeping the rounds moving with enough rhythm to make the tiebreaker feel like a dance-off.</p></article>
-        <article class="trivia-host"><p class="host-role">Temporal turntablist</p><h3>DJ Astrognome</h3><p>Managing the soundtrack and ensuring each round lands in the correct era, give or take a timeline.</p></article>
-        <article class="trivia-host"><p class="host-role">Road crew · operations</p><h3>Gary the Road Guy</h3><p>Gruff, unfriendly, lethally efficient. Gary will make sure the microphones, answer sheets, and band all arrive.</p></article>
-        <article class="trivia-host"><p class="host-role">Droid DJ · sound systems</p><h3>Spinmaster R2DJ</h3><p>Serving up intergalactic selections, sound effects, and the occasional astromech opinion about your team's answer.</p></article>
+      <div class="trivia-roster trivia-roster-featured">
+        <article class="trivia-host"><p class="host-role">Sole host · droid DJ · sound systems</p><h3>Spinmaster R2DJ</h3><p>Serving up Star Wars trivia, intergalactic selections, sound effects, and the occasional astromech opinion about your team's answer. Appeals may be submitted in binary.</p></article>
       </div>
-    </section>
-
-    <section class="trivia-final trivia-section">
-      <p class="eyebrow">SIESTA KEY, FLORIDA</p>
-      <h2>Bring your best team.<br><em>Leave your certainty at the door.</em></h2>
-      <p>Let The Wookie Win trivia nights are coming to Siesta Key. Event dates and venue details will be announced separately.</p>
-      <a class="button button-gold" href="https://www.instagram.com/ghettowookie/" target="_blank" rel="noreferrer">Follow Ghetto Wookie for updates <span>↗</span></a>
     </section>
   </main>
 
